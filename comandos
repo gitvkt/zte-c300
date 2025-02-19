@@ -1,0 +1,42 @@
+======================================================
+Fazer upload de um arquivo na OLT ZTE via TFTP MIKROTIK
+file download verison-ru NOMEDOARQUIVO.BIN ftp ipaddress IPDOMIKROTIK path /DIRETORIODOMIKROTIK user LOGINDOMIKROTIK password SENHADOMIKROTIK
+======================================================
+Verificar arquivos no SD da OLT
+show file version-ru
+======================================================
+Verificar Informações básicas da ONT
+show remote-unit information gpon-olt_1/8/2 40
+======================================================
+Fazer upload de um arquivo na Ont remotamente após estar provisionada  (nokia)
+remote-unit update-and-reboot NOMEDOARQUIVO.bin gpon-olt_1/8/2 50 
+======================================================
+Fazer upload de um arquivo na Ont remotamente após estar provisionada  (intelbras)
+remote-unit update-and-reboot v210414.tar gpon-olt_1/8/2 50 
+======================================================
+Verificar status do update 
+show remote-unit update-status gpon-olt_1/8/2 50
+======================================================
+*Verificar detalhes de um ONT*
+zte#show gpon remote-onu equip gpon-onu_1/8/2:50
+Vendor ID:                 ALCL                             
+Version:                   000000000000AA
+SN:                        ALCLxxxxxxxx
+Admin status:              unlock
+Battery monitor:           false
+Security mode:             aes
+Product code:              12598
+Total priority queue num:  124
+Total traffic schedule num:32
+Traffic management option: priority-rate-controlled
+Operate status:            enable
+Equipment ID:              NOCLEICODEG140WH
+OMCC version:              a3
+Security capability:       aes
+Model:                     G-140W-H
+Survival time:             N/A
+Total GEM port num:        126
+System uptime:             9282.00 s
+Region code:               N/A
+Product SN:                N/A
+Chip info:                 0
