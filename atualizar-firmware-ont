@@ -29,7 +29,7 @@ Committime : 2021-07-11 18:15:14
 zte#show gpon remote-onu equip gpon-onu_1/8/2:55
 Vendor ID:                 ALCL
 Version:                   3FE48054BDAA01
-SN:                        ALCLfbeda677
+SN:                        ALCLaaaa0000
 Admin status:              unlock
 Battery monitor:           false
 Security mode:             aes
