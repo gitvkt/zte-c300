@@ -3,11 +3,11 @@ COMANDOS OLT ZTE
 
 
 ******************************************************************************************
-# Verificar ONUs não cadastradas=
+# Verificar ONUs não cadastradas
 
 zte#show pon onu uncfg
 ******************************************************************************************
-# Ver todas ONUS em um PON e porta=
+# Ver todas ONUS em um PON e porta
 
 zte#show gpon onu baseinfo gpon-olt_1/8/2
 ******************************************************************************************
@@ -52,7 +52,7 @@ Exemplo de número de série:  AABCEF123456
 Exemplo de profile: 1G
 ******************************************************************************************
 
-Remover um ONU
+# Remover um ONU
 
 conf t
 interface gpon-olt_1/8/2
