@@ -1,0 +1,17 @@
+#Atualizar firmware remotamente nas ONTs
+
+zte#show gpon remote-onu equip gpon-onu_1/8/2:53
+
+zte#remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 53
+
+zte#show remote-unit update-status gpon-olt_1/8/2 53
+gpon-onu_1/8/2: 53
+Taskname   : Manual
+Action     : Update-and-reboot
+ImgLocation: Local
+Status     : In-progress
+Progress   : 100%
+Failreason : None
+Committime :
+
+zte#show gpon remote-onu equip gpon-onu_1/8/2:53
