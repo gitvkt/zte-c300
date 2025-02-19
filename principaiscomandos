@@ -14,3 +14,29 @@ OnuIndex            Type        Mode    AuthInfo                State
 -------------------------------------------------------------------------------
 gpon-onu_1/8/2:1    F660        sn      SN:xxxxxxx00000         ready
 =======================================================================================
+configure terminal
+interface gpon-olt_1/8/2
+onu 50 type F660 sn xxxxxxx00000
+!
+interface gpon-onu_1/8/2:50
+name TESTE-NOKIA
+sn-bind enable sn
+tcont 1  profile 1G
+gemport 1  tcont 1
+service-port 1 vport 1 user-vlan 101  vlan 101
+!
+pon-onu-mng gpon-onu_1/8/2:50
+service 1 gemport 1 vlan 101
+!
+exit
+wr
+=======================================================================================
+Remover um ONU
+conf t
+interface gpon-olt_1/8/2
+no onu 50
+.[Successful]
+exit
+exit
+wr
+=======================================================================================
