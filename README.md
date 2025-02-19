@@ -56,7 +56,7 @@ Exemplo de número de série:  AABCEF123456
 
 Exemplo de profile: 1G
 
-Exemplo para cadastrar no Slot 1 da Porta 8 na Pon 2 na Posição 50
+Exemplo para cadastrar no Slot 1 da Porta 8 da Pon 2 na Posição 50
 
 ******************************************************************************************
 
