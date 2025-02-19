@@ -10,6 +10,8 @@ zte#show pon onu uncfg
 # Ver todas ONUS em um PON e porta
 
 zte#show gpon onu baseinfo gpon-olt_1/8/2
+
+Exemplo para verificar no Slot 1 da Porta 8 na Pon 2
 ******************************************************************************************
 # Cadastrar uma ONT
 
@@ -53,6 +55,8 @@ Exemplo de nome:  NOKIA2-TESTE-9-8/2:50
 Exemplo de número de série:  AABCEF123456
 
 Exemplo de profile: 1G
+
+Exemplo para cadastrar no Slot 1 da Porta 8 na Pon 2 na Posição 50
 
 ******************************************************************************************
 
