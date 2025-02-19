@@ -11,7 +11,8 @@ zte#show pon onu uncfg
 
 zte#show gpon onu baseinfo gpon-olt_1/8/2
 ******************************************************************************************
-=Cadastrar uma ONT
+=
+Cadastrar uma ONT
 
 zte(config)#interface gpon-olt_1/8/2
 
