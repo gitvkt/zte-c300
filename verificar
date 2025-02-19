@@ -14,7 +14,7 @@ ZXAN(config)# pon -onu-mng gpon-onu_1/2/1:1
 ZXAN(gpon-onu -mng)# show service-port interface gpon-onu_1/2/1:1 
 
 
-VERIFI CANDO  INFORMAÇÕES DAS ONUs 
+VERIFICANDO  INFORMAÇÕES DAS ONUs 
 ZXAN# show gpon onu detail-info  gpon-onu_1/2/1:1 
 ZXAN# show gpon remote-onu equip gpon-onu_1/2/1:1
 
