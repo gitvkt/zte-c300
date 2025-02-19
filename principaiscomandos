@@ -42,3 +42,15 @@ exit
 exit
 wr
 =======================================================================================
+
+Verificar Informações básicas da ONT
+show remote-unit information gpon-olt_1/8/2 50
+======================================================
+
+Fazer upload de um arquivo na Ont remotamente após estar provisionada  (nokia)
+remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 50 
+======================================================
+
+Verificar status do update 
+show remote-unit update-status gpon-olt_1/8/2 50
+======================================================
