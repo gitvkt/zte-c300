@@ -47,9 +47,13 @@ zte#wr
 
 
 Exemplo de VLAN: 101
+
 Exemplo de nome:  NOKIA2-TESTE-9-8/2:50
+
 Exemplo de número de série:  AABCEF123456
+
 Exemplo de profile: 1G
+
 ******************************************************************************************
 
 # Remover um ONU
