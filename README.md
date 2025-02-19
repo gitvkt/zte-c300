@@ -59,10 +59,16 @@ Exemplo de profile: 1G
 # Remover um ONU
 
 conf t
+
 interface gpon-olt_1/8/2
+
 no onu 50
+
 .[Successful]
+
 exit
+
 exit
+
 wr
 ******************************************************************************************
