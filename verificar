@@ -18,44 +18,44 @@ VERIFICANDO  INFORMAÇÕES DAS ONUs
 ZXAN# show gpon onu detail-info  gpon-onu_1/2/1:1 
 ZXAN# show gpon remote-onu equip gpon-onu_1/2/1:1
 
-VERIFI CANDO  SINAL OPTICO  RX DA O NU 
+VERIFICANDO  SINAL OPTICO  RX DA O NU 
 ZXAN(config)# show  po n  po we r  o nu-rx gpon-onu_1/2/ 1   
 
-VERIFI CANDO  SINAL OPTICO  TX  DA ONU 
+VERIFICANDO  SINAL OPTICO  TX  DA ONU 
 ZXAN(config)# show  pon  power  o nu-tx gpon-onu _1/2/1   
 
-VERIFI CANDO  SINAL OPTICO  TX  DA OLT 
+VERIFICANDO  SINAL OPTICO  TX  DA OLT 
 ZXAN(config)# show  pon  power  o lt-tx gpon-olt_1/2/1   
 
-VERIFI CANDO  SINAL OPTICO  RX DA O LT 
+VERIFICANDO  SINAL OPTICO  RX DA O LT 
 ZXAN(config)# show  pon  power  o lt-rx gpon-olt_1/2/1:1   
 
-VERIFI CANDO  RELATORIO DE ATENUAÇÕES DA O NU 
+VERIFICANDO  RELATORIO DE ATENUAÇÕES DA O NU 
 ZXAN(config)# show  pon  power  attenuation  gpon-onu_1/2/1:1
 
-VERIFI CANDO  DISTANCIA FI SI CA ENTRE OLT E ONU
+VERIFICANDO  DISTANCIA FI SI CA ENTRE OLT E ONU
 ZXAN(config)# show gpon onu distance gpon-onu_1/2/1: 1
 
-VERIFI CANDO  TABELA MAC 
+VERIFICANDO  TABELA MAC 
 ZXAN(config)#  show  mac
 
-VERIFI CANDO  MODULO S OPTICOS DA O LT 
+VERIFICANDO  MODULO S OPTICOS DA O LT 
 ZXAN(config-if)# show interface optical-module-info gpo n-olt_1/2/1
 
-HABIL ITANDO  A AUTORIZAÇÃO  AUTOMATICA  DE ONUs 
+HABILITANDO  A AUTORIZAÇÃO  AUTOMATICA  DE ONUs 
 ZXAN(config)# interface gpon_olt_1/2/1 
 ZXAN(config-if)#  auto-learning e nable
 
-VERIFI CANDO  FONTE DE ALIMENTAÇÃO DA O LT 
+VERIFICANDO  FONTE DE ALIMENTAÇÃO DA O LT 
 ZXAN(config)# show  power
 
- VERIFI CANDO  CONFIGURAÇÕES NA RUNNI NG-CONFIG 
+ VERIFICANDO  CONFIGURAÇÕES NA RUNNI NG-CONFIG 
 ZXAN(config)# show run ning-config   
 
-SALVANDO  AS  CONFIGURAÇÕES NA FLASH 
+SALVANDOAS  CONFIGURAÇÕES NA FLASH 
 ZXAN# write
 
-LIM PANDO CONFIGURAÇÕES DE UMA ONU 
+LIMPANDO CONFIGURAÇÕES DE UMA ONU 
 ZXAN(config)# pon 
 ZXAN(config-pon)# clear onu gpon-onu_1/2/1: 1
 
