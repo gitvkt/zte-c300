@@ -17,6 +17,13 @@ remote-unit update-and-reboot v210414.tar gpon-olt_1/8/2 50
 Verificar status do update 
 show remote-unit update-status gpon-olt_1/8/2 50
 ======================================================
+Comandos para reboot remoto
+OLT-ZTE_C320#config t
+Enter configuration commands, one per line.  End with CTRL/Z.
+OLT-ZTE_C320(config)#pon-onu
+OLT-ZTE_C320(config)#pon-onu-mng gpon-onu_1/2/5:5
+OLT-ZTE_C320(gpon-onu-mng)#reboot
+======================================================
 *Verificar detalhes de um ONT*
 zte#show gpon remote-onu equip gpon-onu_1/8/2:50
 Vendor ID:                 ALCL                             
