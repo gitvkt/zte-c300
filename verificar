@@ -1,0 +1,8 @@
+VERIFICANDO  SERVIÇOS DE I NTERNET,  VOZ E IPTV 
+ZXAN# show onu running config gpon-onu_1/2/1:1 
+ZXAN# show gpon onu detail-info gpon-onu_1/2/1:1 
+ZXAN# show mac gpon onu gpon-onu_1/2/1:1 
+ZXAN# show igmp mvlan 300 
+ZXAN# show igmp mp-forwa r din g-table 
+ZXAN(config)# pon -onu-mng gpon-onu_1/2/1:1 
+ZXAN(gpon-onu -mng)# show service-port interface gpon-onu_1/2/1:1 
