@@ -1,22 +1,16 @@
 =======================================================================================
-Verifica ONU não cadastrada
+Verificar ONUs não cadastradas
+
 zte#show pon onu uncfg
-
-OltIndex            Model                SN                 PW
--------------------------------------------------------------------------
-gpon-olt_1/8/2      G-140W-H             xxxxxxx00000        DEFAULT
 =======================================================================================
-Ver todas ONUS em um PON
-zte#show gpon onu baseinfo gpon-olt_1/8/2
+Ver todas ONUS em um PON e porta
 
-OnuIndex            Type        Mode    AuthInfo                State
--------------------------------------------------------------------------------
-gpon-onu_1/8/2:1    F660        sn      SN:xxxxxxx00000         ready
+zte#show gpon onu baseinfo gpon-olt_1/8/2
 =======================================================================================
 Cadastrar uma ONT
 
 zte(config)#interface gpon-olt_1/8/2
-zte(config-if)#onu 50 type F660 sn ALCLFBD8A121 
+zte(config-if)#onu 50 type F660 sn AABCEF123456 
 .[Successful]
 zte(config-if)#!
 zte(config)#interface gpon-onu_1/8/2:50
@@ -31,6 +25,11 @@ zte(gpon-onu-mng 1/8/2:50)#service 1 gemport 1 vlan 101
 zte(gpon-onu-mng 1/8/2:50)#!
 zte(config)#exit
 zte#wr
+
+Exemplo de VLAN: 101
+Exemplo de nome:  NOKIA2-TESTE-9-8/2:50
+Exemplo de número de série:  AABCEF123456
+Exemplo de profile: 1G
 =======================================================================================
 
 Remover um ONU
