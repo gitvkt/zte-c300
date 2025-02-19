@@ -1,11 +1,12 @@
 #Atualizar firmware remotamente nas ONTs
+Exemplo usando Slot8, Pon2, Posição 55
 
-zte#show gpon remote-onu equip gpon-onu_1/8/2:53
+zte#show gpon remote-onu equip gpon-onu_1/8/2:55
 
-zte#remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 53
+zte#remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 55
 
-zte#show remote-unit update-status gpon-olt_1/8/2 53
-gpon-onu_1/8/2: 53
+zte#show remote-unit update-status gpon-olt_1/8/2 55
+gpon-onu_1/8/2: 55
 Taskname   : Manual
 Action     : Update-and-reboot
 ImgLocation: Local
@@ -14,4 +15,37 @@ Progress   : 100%
 Failreason : None
 Committime :
 
-zte#show gpon remote-onu equip gpon-onu_1/8/2:53
+zte#show remote-unit update-status gpon-olt_1/8/2 55
+gpon-onu_1/8/2: 55
+Taskname   : Manual
+Action     : Update-and-reboot
+ImgLocation: Local
+Status     : Success
+Progress   : 100%
+Failreason : None
+Committime : 2021-07-11 18:15:14
+
+
+zte#show gpon remote-onu equip gpon-onu_1/8/2:55
+Vendor ID:                 ALCL
+Version:                   3FE48054BDAA01
+SN:                        ALCLfbeda677
+Admin status:              unlock
+Battery monitor:           false
+Security mode:             aes
+Product code:              12598
+Total priority queue num:  124
+Total traffic schedule num:32
+Traffic management option: priority-rate-controlled
+Operate status:            enable
+Equipment ID:              NOCLEICODEG140WH
+OMCC version:              a0
+Security capability:       aes
+Model:                     F668V5.2
+Survival time:             N/A
+Total GEM port num:        126
+System uptime:             774.00 s
+Region code:               N/A
+Product SN:                N/A
+Chip info:                 0
+
