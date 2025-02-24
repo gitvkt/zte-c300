@@ -78,10 +78,13 @@ wr
 ******************************************************************************************
 
 #Buscar uma ONU pelo número de série
+
 show gpon onu by sn AABCEF123456 
 ******************************************************************************************
-#Buscar uma ONU pela descrição
-show gpon onu by desc NOME
+
+#Buscar tudo em execução, inclusive equipamentos por descrição pode ser vizualizados
+
+show running-config
 ******************************************************************************************
 
 
