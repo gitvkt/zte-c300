@@ -1,11 +1,17 @@
 #Atualizar firmware remotamente nas ONTs
 Exemplo usando Slot8, Pon2, Posição 55
-******************
+********************************************
+
 zte#show gpon remote-onu equip gpon-onu_1/8/2:55
+
+********************************************
 
 zte#remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 55
 
+********************************************
+
 zte#show remote-unit update-status gpon-olt_1/8/2 55
+
 gpon-onu_1/8/2: 55
 Taskname   : Manual
 Action     : Update-and-reboot
@@ -15,7 +21,10 @@ Progress   : 100%
 Failreason : None
 Committime :
 
+********************************************
+
 zte#show remote-unit update-status gpon-olt_1/8/2 55
+
 gpon-onu_1/8/2: 55
 Taskname   : Manual
 Action     : Update-and-reboot
@@ -25,8 +34,10 @@ Progress   : 100%
 Failreason : None
 Committime : 2021-07-11 18:15:14
 
+********************************************
 
 zte#show gpon remote-onu equip gpon-onu_1/8/2:55
+
 Vendor ID:                 ALCL
 Version:                   3FE48054BDAA01
 SN:                        ALCLaaaa0000
