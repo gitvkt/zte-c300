@@ -1,4 +1,13 @@
 #Atualizar firmware remotamente nas ONTs
+
+********************************************
+show gpon remote-onu equip gpon-onu_1/8/2:55
+
+remote-unit update-and-reboot nokia.bin gpon-olt_1/8/2 55
+
+show remote-unit update-status gpon-olt_1/8/2 55
+********************************************
+
 Exemplo usando Slot8, Pon2, Posição 55
 ********************************************
 
