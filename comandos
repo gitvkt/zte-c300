@@ -52,4 +52,6 @@ Chip info:                 0
 UPLOAD DE UM ARQUIVO NA OLT ZTE PELO MIKROTIK
 file download verison-ru NOMEDOARQUIVO.BIN ftp ipaddress IPDOMIKROTIK path /DIRETORIODOMIKROTIK user LOGINDOMIKROTIK password SENHADOMIKROTIK
 
+file download verison-ru nokiag1425ga.bin ftp ipaddress 10.10.60.1 path /home user LOGINDOMK password SENHADOMK
+
 ======================================================
