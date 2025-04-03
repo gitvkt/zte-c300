@@ -49,5 +49,7 @@ Product SN:                N/A
 Chip info:                 0
 ======================================================
 
+UPLOAD DE UM ARQUIVO NA OLT ZTE PELO MIKROTIK
 file download verison-ru NOMEDOARQUIVO.BIN ftp ipaddress IPDOMIKROTIK path /DIRETORIODOMIKROTIK user LOGINDOMIKROTIK password SENHADOMIKROTIK
 
+======================================================
