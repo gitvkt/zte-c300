@@ -47,3 +47,7 @@ System uptime:             9282.00 s
 Region code:               N/A
 Product SN:                N/A
 Chip info:                 0
+======================================================
+
+file download verison-ru NOMEDOARQUIVO.BIN ftp ipaddress IPDOMIKROTIK path /DIRETORIODOMIKROTIK user LOGINDOMIKROTIK password SENHADOMIKROTIK
+
